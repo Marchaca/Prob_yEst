@@ -1,0 +1,19 @@
+---
+title: "Práctica Prob y Est II"
+author: "Marcos Chamorro Casillas --  Arturo Peñas Mohedano --  Alvaro Adanez Huecas -- Tino (Pon tus apellidos)"
+output: html_notebook
+---
+
+Comprobamos que la tabla se ha cargado bien
+
+```{r Mostrar la tabla, echo = TRUE}
+tabla_valores <- read.csv(file = 'PYE2DataSet47.csv')
+head(tabla_valores) # Visualizamos las 5 primeras personas
+```
+
+Cargamos la seed necesaria para realizar la práctica:
+
+```{r cargar la seed, echo = TRUE}
+set.seed(2021)
+```
+
