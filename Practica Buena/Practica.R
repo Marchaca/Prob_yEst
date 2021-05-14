@@ -765,50 +765,54 @@ library(rcompanion)
 
 # VARONES
 
-# Para una confianza del 90%
-groupwiseMean(sleeptime ~ 1, data = datos_varones, conf = 0.90, digits = 3)
+# Para SLEEPTIME
 
-# .id      n        Mean       Conf.level        Trad.lower       Trad.upper
-# 1 <NA>  5030      8.12          0.9              8.02            8.23
+# Para una confianza del 90%
+groupwiseMean(sleeptime ~ Sex, data = datos_varones, conf = 0.90, digits = 3)
+
+# Sex    n      Mean       Conf.level      Trad.lower       Trad.upper
+# 1   V 5030    8.12        0.9             8.02              8.23
 
 
 # Para una confianza del 95%
-groupwiseMean(sleeptime ~ 1, data = datos_varones, conf = 0.95, digits = 3)
+groupwiseMean(sleeptime ~ Sex, data = datos_varones, conf = 0.95, digits = 3)
 
-# .id      n      Mean    Conf.level    Trad.lower  Trad.upper
-# 1 <NA>  5030    8.12       0.95          8           8.25
+# Sex      n      Mean    Conf.level    Trad.lower  Trad.upper
+# 1   V  5030    8.12       0.95          8           8.25
 
 
 
 # Para una confianza del 99%
-groupwiseMean(sleeptime ~ 1, data = datos_varones, conf = 0.99, digits = 3)
+groupwiseMean(sleeptime ~ Sex, data = datos_varones, conf = 0.99, digits = 3)
 
-# .id      n        Mean       Conf.level        Trad.lower       Trad.upper
-# 1 <NA>  5030      8.12          0.99              7.96             8.28
+# Sex      n        Mean       Conf.level        Trad.lower       Trad.upper
+# 1   V  5030      8.12          0.99              7.96             8.28
 
 
 
 # MUJERES
 
-# Para una confianza del 90%
-groupwiseMean(sleeptime ~ 1, data = datos_mujeres, conf = 0.90, digits = 3)
+# Para SLEEPTIME
 
-# .id         n       Mean         Conf.level        Trad.lower           Trad.upper
-# 1 <NA>    4970      10.1           0.9                9.99                  10.2
+# Para una confianza del 90%
+groupwiseMean(sleeptime ~ Sex, data = datos_mujeres, conf = 0.90, digits = 3)
+
+# Sex       n        Mean         Conf.level        Trad.lower           Trad.upper
+# 1   M    4970      10.1           0.9                9.99                  10.2
 
 
 # Para una confianza del 95%
-groupwiseMean(sleeptime ~ 1, data = datos_mujeres, conf = 0.95, digits = 3)
+groupwiseMean(sleeptime ~ Sex, data = datos_mujeres, conf = 0.95, digits = 3)
 
-# .id       n      Mean         Conf.level          Trad.lower         Trad.upper
-# 1 <NA>   4970   10.1           0.95                   9.97             10.2
+# Sex       n      Mean         Conf.level          Trad.lower         Trad.upper
+# 1   M   4970     10.1           0.95                   9.97             10.2
 
 
 # Para una confianza del 99%
-groupwiseMean(sleeptime ~ 1, data = datos_mujeres, conf = 0.99, digits = 3)
+groupwiseMean(sleeptime ~ Sex, data = datos_mujeres, conf = 0.99, digits = 3)
 
-# .id       n       Mean         Conf.level        Trad.lower       Trad.upper
-# 1 <NA>   4970     10.1           0.99                9.93              10.3
+# Sex       n        Mean         Conf.level        Trad.lower       Trad.upper
+# 1   M   4970       10.1           0.99                9.93              10.3
 
 
 
@@ -816,49 +820,104 @@ groupwiseMean(sleeptime ~ 1, data = datos_mujeres, conf = 0.99, digits = 3)
 
 # HOMBRES
 
-# Para una confianza del 90%
-groupwiseMean(sleeptime ~ 1, data = datos_varones200, conf = 0.90, digits = 3)
+# Para SLEEPTIME
 
-# .id       n        Mean        Conf.level       Trad.lower        Trad.upper
-# 1 <NA>    200      8.08            0.9            7.56               8.6
+# Para una confianza del 90%
+groupwiseMean(sleeptime ~ Sex, data = datos_varones200, conf = 0.90, digits = 3)
+
+# Sex       n        Mean        Conf.level       Trad.lower        Trad.upper
+# 1   V    200      8.08            0.9            7.56               8.6
 
 
 # Para una confianza del 95%
-groupwiseMean(sleeptime ~ 1, data = datos_varones200, conf = 0.95, digits = 3)
+groupwiseMean(sleeptime ~ Sex, data = datos_varones200, conf = 0.95, digits = 3)
 
-# .id   n Mean Conf.level Trad.lower Trad.upper
-# 1 <NA> 200 8.08       0.95       7.46        8.7
+# Sex      n       Mean        Conf.level       Trad.lower        Trad.upper
+# 1    V  200       8.08         0.95            7.46                 8.7
 
 
 # Para una confianza del 99%
-groupwiseMean(sleeptime ~ 1, data = datos_varones200, conf = 0.99, digits = 3)
+groupwiseMean(sleeptime ~ Sex, data = datos_varones200, conf = 0.99, digits = 3)
 
-# .id     n         Mean        Conf.level         Trad.lower        Trad.upper
-# 1 <NA> 200        8.08          0.99               7.26                8.9
+# Sex       n         Mean        Conf.level         Trad.lower        Trad.upper
+# 1   V    200        8.08          0.99               7.26                8.9
 
 
 
 # MUJERES
 
-# Para una confianza del 90%
-groupwiseMean(sleeptime ~ 1, data = datos_mujeres200, conf = 0.90, digits = 3)
+# Para SLEEPTIME
 
-# .id      n       Mean        Conf.level       Trad.lower        Trad.upper
-# 1 <NA>  200       10.4           0.9            9.88               11
+# Para una confianza del 90%
+groupwiseMean(sleeptime ~ Sex, data = datos_mujeres200, conf = 0.90, digits = 3)
+
+# Sex      n       Mean        Conf.level       Trad.lower        Trad.upper
+# 1   M   200       10.4           0.9            9.88               11
 
 
 # Para una confianza del 95%
-groupwiseMean(sleeptime ~ 1, data = datos_mujeres200, conf = 0.95, digits = 3)
+groupwiseMean(sleeptime ~ Sex, data = datos_mujeres200, conf = 0.95, digits = 3)
 
-# .id       n     Mean        Conf.level       Trad.lower        Trad.upper
-# 1 <NA>   200    10.4          0.95             9.77              11.1
+# Sex       n     Mean        Conf.level       Trad.lower        Trad.upper
+# 1   M    200    10.4          0.95             9.77              11.1
 
 
 # Para una confianza del 99%
-groupwiseMean(sleeptime ~ 1, data = datos_mujeres200, conf = 0.99, digits = 3)
+groupwiseMean(sleeptime ~ Sex, data = datos_mujeres200, conf = 0.99, digits = 3)
 
-# .id       n       Mean        Conf.level       Trad.lower        Trad.upper
-# 1 <NA>    200     10.4           0.99             9.56              11.3
+# Sex       n       Mean        Conf.level       Trad.lower        Trad.upper
+# 1   M    200     10.4           0.99             9.56              11.3
+
+
+
+# Ahora lo vamos a hacer para la variable STEPS
+
+
+# HOMBRES
+
+
+# Para una confianza del 90%
+groupwiseMean(steps ~ Sex, data = datos_varones, conf = 0.90, digits = 3)
+
+# Sex       n      Mean        Conf.level     Trad.lower      Trad.upper
+# 1   V   5030    10400          0.9            10400          10500
+
+
+# Para una confianza del 95%
+groupwiseMean(steps ~ Sex, data = datos_varones, conf = 0.95, digits = 3)
+
+# Sex       n        Mean      Conf.level       Trad.lower      Trad.upper
+# 1   V   5030      10400       0.95            10400             10500
+
+# Para una confianza del 99%
+groupwiseMean(steps ~ Sex, data = datos_varones, conf = 0.99, digits = 3)
+
+# Sex       n        Mean        Conf.level     Trad.lower      Trad.upper
+# 1   V   5030      10400       0.99              10400           10500
+
+
+# Para MUJERES
+
+# Para una confianza del 90%
+groupwiseMean(steps ~ Sex, data = datos_mujeres, conf = 0.90, digits = 3)
+
+# Sex       n        Mean        Conf.level       Trad.lower      Trad.upper
+# 1   M     4970      12400        0.9             12400            12400
+
+
+
+# Para una confianza del 95%
+groupwiseMean(steps ~ Sex, data = datos_mujeres, conf = 0.95, digits = 3)
+
+# Sex         n        Mean      Conf.level       Trad.lower      Trad.upper
+# 1   M      4970      12400       0.95            12400             12400
+
+
+# Para una confianza del 99%
+groupwiseMean(steps ~ Sex, data = datos_mujeres, conf = 0.99, digits = 3)
+
+# Sex       n        Mean        Conf.level       Trad.lower      Trad.upper
+# 1   M    4970      12400        0.99             12400             12400
 
 
 # Ahora vamos a usar la función bootstrap
@@ -867,13 +926,425 @@ groupwiseMean(sleeptime ~ 1, data = datos_mujeres200, conf = 0.99, digits = 3)
 
 library(boot)
 
-VaronesBoot <- boot(datos_varones200$sleeptime, function(x, i) mean(x[i]), R = 100)
 
+# Intervalos de confianza para los VARONES
+
+VaronesBoot = boot(datos_varones$sleeptime, function(x, i) mean(x[i]), R = 100)
+
+VaronesBootS = boot(datos_varones$steps, function(x, i) mean(x[i]), R = 100)
+
+
+# Para la variable SLEEPTIME
 
 mean(VaronesBoot$t[,1])
 
-# [1] 8.098073
+# [1] 8.122187
+
+
+# IC --> 90%
+boot.ci(VaronesBoot, conf = 0.90, type = c("norm"))
+
+# RESULTADOS:
+
+# BOOTSTRAP CONFIDENCE INTERVAL CALCULATIONS
+# Based on 100 bootstrap replicates
+
+# CALL : 
+#  boot.ci(boot.out = VaronesBoot, conf = 0.9, type = c("norm"))
+
+# Intervals : 
+# Level      Normal        
+# 90%   ( 8.025,  8.211 )  
+# Calculations and Intervals on Original Scale
+
+
+# IC --> 95%
+boot.ci(VaronesBoot, conf = 0.95, type = c("norm"))
+
+# BOOTSTRAP CONFIDENCE INTERVAL CALCULATIONS
+# Based on 100 bootstrap replicates
+
+# CALL : 
+#  boot.ci(boot.out = VaronesBoot, conf = 0.95, type = c("norm"))
+
+# Intervals : 
+#  Level      Normal        
+# 95%   ( 8.007,  8.229 )  
+# Calculations and Intervals on Original Scale
+
+
+# IC --> 99%
+boot.ci(VaronesBoot, conf = 0.99, type = c("norm"))
+
+# BOOTSTRAP CONFIDENCE INTERVAL CALCULATIONS
+# Based on 100 bootstrap replicates
+
+# CALL : 
+#  boot.ci(boot.out = VaronesBoot, conf = 0.99, type = c("norm"))
+
+# Intervals : 
+# Level      Normal        
+# 99%   ( 7.972,  8.264 )  
+# Calculations and Intervals on Original Scale
+
+
+# Para la variable STEPS
+
+mean(VaronesBootS$t[,1])
+
+# [1] 10439.89
+
+# IC --> 90%
+boot.ci(VaronesBootS, conf = 0.90, type = c("norm"))
+
+# BOOTSTRAP CONFIDENCE INTERVAL CALCULATIONS
+# Based on 100 bootstrap replicates
+
+# CALL : 
+#  boot.ci(boot.out = VaronesBootS, conf = 0.9, type = c("norm"))
+
+# Intervals : 
+#  Level      Normal        
+#  90%   (10420, 10463 )  
+# Calculations and Intervals on Original Scale
+
+
+# IC --> 95%
+boot.ci(VaronesBootS, conf = 0.95, type = c("norm"))
+
+# BOOTSTRAP CONFIDENCE INTERVAL CALCULATIONS
+# Based on 100 bootstrap replicates
+
+# CALL : 
+#  boot.ci(boot.out = VaronesBootS, conf = 0.95, type = c("norm"))
+
+# Intervals : 
+# Level      Normal        
+# 95%   (10416, 10467 )  
+# Calculations and Intervals on Original Scale
+
+
+# IC --> 99%
+boot.ci(VaronesBootS, conf = 0.99, type = c("norm"))
+
+# BOOTSTRAP CONFIDENCE INTERVAL CALCULATIONS
+# Based on 100 bootstrap replicates
+
+# CALL : 
+#   boot.ci(boot.out = VaronesBootS, conf = 0.99, type = c("norm"))
+
+#Intervals : 
+#  Level      Normal        
+#  99%   (10408, 10475 )  
+#  Calculations and Intervals on Original Scale
 
 
 
 
+# Intervalos de confianza para las MUJERES
+
+MujeresBoot = boot(datos_mujeres$sleeptime, function(x, i) mean(x[i]), R = 100)
+
+MujeresBootS = boot(datos_mujeres$steps, function(x, i) mean(x[i]), R = 100)
+
+
+mean(MujeresBoot$t[,1])
+
+# [1] 10.10151
+
+
+# IC --> 90%
+boot.ci(MujeresBoot, conf = 0.90, type = c("norm"))
+
+# BOOTSTRAP CONFIDENCE INTERVAL CALCULATIONS
+# Based on 100 bootstrap replicates
+
+# CALL : 
+#  boot.ci(boot.out = MujeresBoot, conf = 0.9, type = c("norm"))
+
+# Intervals : 
+# Level      Normal        
+# 90%   ( 9.98, 10.19 )  
+# Calculations and Intervals on Original Scale
+
+# IC --> 95%
+boot.ci(MujeresBoot, conf = 0.95, type = c("norm"))
+
+# BOOTSTRAP CONFIDENCE INTERVAL CALCULATIONS
+# Based on 100 bootstrap replicates
+
+# CALL : 
+#  boot.ci(boot.out = MujeresBoot, conf = 0.95, type = c("norm"))
+
+# Intervals : 
+# Level      Normal        
+# 95%   ( 9.96, 10.21 )  
+# Calculations and Intervals on Original Scale
+
+# IC --> 99%
+boot.ci(MujeresBoot, conf = 0.99, type = c("norm"))
+
+# BOOTSTRAP CONFIDENCE INTERVAL CALCULATIONS
+# Based on 100 bootstrap replicates
+
+# CALL : 
+# boot.ci(boot.out = MujeresBoot, conf = 0.99, type = c("norm"))
+
+# Intervals : 
+# Level      Normal        
+# 99%   ( 9.92, 10.25 )  
+# Calculations and Intervals on Original Scale
+
+
+# Para la variable STEPS
+
+mean(MujeresBootS$t[,1])
+
+# [1] 12408.29
+
+# IC --> 90%
+boot.ci(MujeresBootS, conf = 0.90, type = c("norm"))
+
+# BOOTSTRAP CONFIDENCE INTERVAL CALCULATIONS
+# Based on 100 bootstrap replicates
+
+# CALL : 
+#  boot.ci(boot.out = MujeresBootS, conf = 0.9, type = c("norm"))
+
+#Intervals : 
+#  Level      Normal        
+#  90%   (12384, 12428 )  
+#  Calculations and Intervals on Original Scale
+
+
+# IC --> 95%
+boot.ci(MujeresBootS, conf = 0.95, type = c("norm"))
+
+# BOOTSTRAP CONFIDENCE INTERVAL CALCULATIONS
+# Based on 100 bootstrap replicates
+
+# CALL : 
+#   boot.ci(boot.out = MujeresBootS, conf = 0.95, type = c("norm"))
+
+# Intervals : 
+#   Level      Normal        
+#   95%   (12380, 12433 )  
+# Calculations and Intervals on Original Scale
+
+
+# IC --> 99%
+boot.ci(MujeresBootS, conf = 0.99, type = c("norm"))
+
+# BOOTSTRAP CONFIDENCE INTERVAL CALCULATIONS
+# Based on 100 bootstrap replicates
+
+# CALL : 
+#  boot.ci(boot.out = MujeresBootS, conf = 0.99, type = c("norm"))
+
+# Intervals : 
+#   Level      Normal        
+#   99%   (12371, 12441 )  
+#   Calculations and Intervals on Original Scale
+
+
+# IC para las VARIANZAS
+
+
+# Para SLEEPTIME IC DEL 90%
+
+longitud <- length(datos$sleeptime) - 1
+
+varSleeptime <- var(datos$sleeptime)
+
+lower90 = varSleeptime * longitud / qchisq(0.1/2, longitud, lower.tail = FALSE)
+
+upper90 = varSleeptime * longitud / qchisq(1 - 0.1/2, longitud, lower.tail = FALSE)
+
+c(lower90 = lower90, variance = varSleeptime, upper90 = upper90)
+
+
+# lower90     variance      upper90 
+# 20.92851    21.41773     21.92527 
+
+
+
+
+# Para SLEEPTIME IC del 95%
+longitud <- length(datos$sleeptime) - 1
+
+varSleeptime <- var(datos$sleeptime)
+
+lower95 = varSleeptime * longitud / qchisq(0.05/2, longitud, lower.tail = FALSE)
+
+upper95 = varSleeptime * longitud / qchisq(1 - 0.05/2, longitud, lower.tail = FALSE)
+
+c(lower95 = lower95, variance = varSleeptime, upper95 = upper95)
+
+# lower     variance    upper95 
+# 20.83623  21.41773   22.02405 
+
+
+
+
+# Para SLEEPTIME IC del 99%
+longitud <- length(datos$sleeptime) - 1
+
+varSleeptime <- var(datos$sleeptime)
+
+lower99 = varSleeptime * longitud / qchisq(0.01/2, longitud, lower.tail = FALSE)
+
+upper99 = varSleeptime * longitud / qchisq(1 - 0.01/2, longitud, lower.tail = FALSE)
+
+c(lower99 = lower99, variance = varSleeptime, upper99 = upper99)
+
+
+#   lower99     variance    upper99 
+#   20.65743     21.41773    22.21881 
+
+
+# Para STEPS IC DEL 90%
+
+longitudSt <- length(datos$steps) - 1
+
+varSteps <- var(datos$steps)
+
+lower90St = varSteps * longitudSt / qchisq(0.1/2, longitudSt, lower.tail = FALSE)
+
+upper90St = varSteps * longitudSt / qchisq(1 - 0.1/2, longitudSt, lower.tail = FALSE)
+
+c(lower90St = lower90St, variance = varSteps, upper90St = upper90St)
+
+#     lower90St     variance     upper90St 
+#     1817638        1860127        1904207
+
+
+# Para STEPS IC DEL 95%
+
+longitudSt <- length(datos$steps) - 1
+
+varSteps <- var(datos$steps)
+
+lower95St = varSteps * longitudSt / qchisq(0.05/2, longitudSt, lower.tail = FALSE)
+
+upper95St = varSteps * longitudSt / qchisq(1 - 0.05/2, longitudSt, lower.tail = FALSE)
+
+c(lower95St = lower95St, variance = varSteps, upper95St = upper95St)
+
+# lower95St   variance     upper95St 
+# 1809623     1860127       1912785
+
+# Para STEPS IC DEL 99%
+
+longitudSt <- length(datos$steps) - 1
+
+varSteps <- var(datos$steps)
+
+lower99St = varSteps * longitudSt / qchisq(0.01/2, longitudSt, lower.tail = FALSE)
+
+upper99St = varSteps * longitudSt / qchisq(1 - 0.01/2, longitudSt, lower.tail = FALSE)
+
+c(lower99St = lower99St, variance = varSteps, upper99St = upper99St)
+
+# lower99St  variance upper99St 
+# 1794095   1860127   1929700 
+
+# Estimación de intervalos, dos poblaciones
+
+# Lo que tenemos que hacer es crear intervalos de confianza para la diferencia de
+# medias y también para la razón de varianzas, ya que pertenecen a distintas poblaciones
+
+library("rcompanion")
+
+
+# Para VARONES
+
+# Para SLEEPTIME
+
+# 90% confianza
+groupwiseMean(sleeptime ~ 1, data = datos_varones, conf = 0.90, digits =  3)
+
+# .id    n      Mean       Conf.level      Trad.lower    Trad.upper
+#1 <NA> 5030    8.12        0.9             8.02          8.23
+
+
+# 95% confianza
+groupwiseMean(sleeptime ~ 1, data = datos_varones, conf = 0.95, digits =  3)
+
+# .id     n      Mean       Conf.level        Trad.lower       Trad.upper
+# 1 <NA> 5030    8.12       0.95               8             8.25
+
+
+# 99% confianza
+groupwiseMean(sleeptime ~ 1, data = datos_varones, conf = 0.99, digits =  3)
+
+# .id    n       Mean       Conf.level        Trad.lower       Trad.upper
+# 1 <NA> 5030   8.12          0.99              7.96              8.28
+
+
+# Para STEPS
+
+# 90% confianza
+groupwiseMean(steps ~ 1, data = datos_varones, conf = 0.90, digits =  3)
+
+# .id    n        Mean      Conf.level     Trad.lower      Trad.upper
+# 1 <NA> 5030     10400        0.9         10400           10500
+
+
+# 95% confianza
+groupwiseMean(steps ~ 1, data = datos_varones, conf = 0.95, digits =  3)
+
+# .id    n        Mean        Conf.level       Trad.lower      Trad.upper
+# 1 <NA> 5030     10400       0.95              10400           10500
+
+
+# 99% confianza
+groupwiseMean(steps ~ 1, data = datos_varones, conf = 0.99, digits =  3)
+
+# .id    n        Mean        Conf.level       Trad.lower        Trad.upper
+# 1 <NA> 5030     10400        0.99             10400               10500
+
+
+# Para MUJERES
+
+# Para SLEEPTIME
+
+# 90% confianza
+groupwiseMean(sleeptime ~ 1, data = datos_mujeres, conf = 0.90, digits =  3)
+
+# .id         n        Mean        Conf.level        Trad.lower       Trad.upper
+# 1 <NA>    4970     10.1          0.9               9.99             10.2
+
+
+# 95% confianza
+groupwiseMean(sleeptime ~ 1, data = datos_mujeres, conf = 0.95, digits =  3)
+
+#.id        n         Mean        Conf.level         Trad.lower          Trad.upper
+# 1 <NA>  4970     10.1           0.95               9.97                10.2
+
+
+# 99% confianza
+groupwiseMean(sleeptime ~ 1, data = datos_mujeres, conf = 0.99, digits =  3)
+
+# .id       n        Mean       Conf.level        Trad.lower         Trad.upper
+# 1 <NA>    4970     10.1         0.99              9.93               10.3
+
+
+# Para STEPS
+
+# 90% confianza
+groupwiseMean(steps ~ 1, data = datos_mujeres, conf = 0.90, digits =  3)
+
+# .id         n        Mean        Conf.level       Trad.lower        Trad.upper
+# 1 <NA>      4970     12400        0.9                12400              12400
+
+# 95% confianza
+groupwiseMean(steps ~ 1, data = datos_mujeres, conf = 0.95, digits =  3)
+
+# .id         n          Mean        Conf.level       Trad.lower          Trad.upper
+# 1 <NA>      4970       12400         0.95             12400               12400
+
+# 99% confianza
+groupwiseMean(steps ~ 1, data = datos_mujeres, conf = 0.99, digits =  3)
+
+# .id       n        Mean        Conf.level       Trad.lower        Trad.upper
+# 1 <NA>  4970       12400        0.99             12400             12400
